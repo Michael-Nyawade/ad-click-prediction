@@ -1,0 +1,9 @@
+project:
+  name: ad-click-prediction
+  random_state: 42
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  models: models
+  reports: reports
