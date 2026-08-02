@@ -22,4 +22,8 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
         processed_df["Timestamp"]
     )
 
+    processed_df["Hour"] = processed_df["Timestamp"].dt.hour
+    processed_df["DayOfWeek"] = processed_df["Timestamp"].dt.dayofweek
+    processed_df["Month"] = processed_df["Timestamp"].dt.month
+
     return processed_df
